@@ -17,15 +17,43 @@
     <!-- Navbar -->
     <header class="backdrop-blur-md bg-white/80 shadow-md fixed top-0 left-0 w-full z-50">
         <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+            <!-- Logo -->
             <div class="text-2xl font-bold tracking-wide">Vaibhav Gosavi</div>
-            <div class="flex gap-6">
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Navigation Links (Desktop) -->
+            <div class="hidden md:flex gap-6">
                 <a href="#about" class="hover:text-gray-700 transition">About</a>
                 <a href="#experience" class="hover:text-gray-700 transition">Experience</a>
                 <a href="#projects" class="hover:text-gray-700 transition">Projects</a>
                 <a href="#education" class="hover:text-gray-700 transition">Education</a>
             </div>
         </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#about" class="block px-6 py-3 border-b hover:bg-gray-100">About</a>
+            <a href="#experience" class="block px-6 py-3 border-b hover:bg-gray-100">Experience</a>
+            <a href="#projects" class="block px-6 py-3 border-b hover:bg-gray-100">Projects</a>
+            <a href="#education" class="block px-6 py-3 hover:bg-gray-100">Education</a>
+        </div>
     </header>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
 
     <!-- Hero Section -->
     <main class="max-w-6xl mx-auto px-6 pt-32 pb-12">
