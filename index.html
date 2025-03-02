@@ -21,6 +21,7 @@
                 <a href="#about" class="hover:text-gray-700 transition">About</a>
                 <a href="#experience" class="hover:text-gray-700 transition">Experience</a>
                 <a href="#projects" class="hover:text-gray-700 transition">Projects</a>
+                <a href="#education" class="hover:text-gray-700 transition">Education</a>
             </div>
         </nav>
     </header>
@@ -30,7 +31,7 @@
         <div class="flex flex-col md:flex-row items-center gap-10">
             <div class="relative">
                 <div class="absolute top-2 left-2 w-48 h-48 bg-gray-300 rounded-xl -z-10"></div>
-                <img class="w-48 h-48 rounded-xl shadow-lg border border-gray-300" src="https://via.placeholder.com/180" alt="Vaibhav Gosavi">
+                <img class="w-48 h-48 rounded-xl shadow-lg border border-gray-300" src="./image.jpg" alt="Vaibhav Gosavi">
             </div>
             <div class="text-center md:text-left">
                 <h1 class="text-5xl font-extrabold">Vaibhav Gosavi</h1>
@@ -53,15 +54,18 @@
     <section id="about" class="max-w-6xl mx-auto px-6 my-12">
         <div class="bg-white shadow-lg rounded-lg p-8">
             <h2 class="text-3xl font-semibold mb-4">📄 About Me</h2>
-            <p class="text-gray-700 leading-relaxed">Full Stack Developer with 5 months of experience building user-friendly applications using front-end and back-end technologies. Passionate about Generative AI and Machine Learning, with a focus on innovative web projects.</p>
-            <div class="flex flex-wrap gap-2 mt-4">
-                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">Python</span>
-                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">JavaScript</span>
-                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">SQL</span>
-                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">React</span>
-                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">Tailwind</span>
-                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">FastAPI</span>
-                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">Express</span>
+            <p class="text-gray-700 leading-relaxed">Full Stack Developer with 5 months of experience building user-friendly applications using front-end and back-end technologies. Skilled in delivering efficient, end-to-end solutions and solving complex challenges. Interested in Generative AI and Machine Learning, with a passion for innovative web development projects.</p>
+            
+            <div class="mt-6">
+                <h3 class="text-xl font-semibold">🛠️ Skills & Technologies</h3>
+                <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4 text-gray-700">
+                    <li><strong>Languages:</strong> Python, SQL, JavaScript</li>
+                    <li><strong>Frontend:</strong> HTML, CSS, React, Tailwind</li>
+                    <li><strong>Frameworks:</strong> FastAPI, Express, Node.js</li>
+                    <li><strong>Databases:</strong> MySQL, MongoDB</li>
+                    <li><strong>Tools:</strong> Git, GitHub, Docker, Postman</li>
+                    <li><strong>OS & Cloud:</strong> Linux, VS Code, Google Cloud</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -74,9 +78,11 @@
                 <h3 class="text-xl font-semibold">Full Stack Development Intern</h3>
                 <p class="text-gray-500">Hyggex World | August 2024 - Present</p>
                 <ul class="list-disc list-inside mt-3 text-gray-700">
-                    <li>Developed an AI-powered timetable system.</li>
-                    <li>Designed and developed a user-friendly dashboard.</li>
-                    <li>Migrated authentication system for better security.</li>
+                    <li>Developed a new backend from scratch, including authentication, exams, and analytics.</li>
+                    <li>Built an AI-powered timetable and calendar system for automated scheduling.</li>
+                    <li>Designed and implemented a user-friendly dashboard for improved engagement.</li>
+                    <li>Created an admin panel with AI integrations for better administrative efficiency.</li>
+                    <li>Migrated authentication from phone-based to email-based for better security.</li>
                 </ul>
             </div>
         </div>
@@ -88,19 +94,26 @@
             <h2 class="text-3xl font-semibold mb-4">🔗 Projects</h2>
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-gray-100 p-6 rounded-lg">
-                    <h3 class="text-lg font-semibold">ResuMATCH: ATS-Friendly Resume Generator</h3>
+                    <h3 class="text-lg font-semibold">ResuMATCH: AI-Based ATS-Friendly Resume Generator</h3>
                     <p class="mt-2 text-gray-700">An AI-powered system for generating ATS-friendly resumes with customizable formats.</p>
                     <p class="mt-2 text-gray-600"><strong>Tech Stack:</strong> MERN, Razorpay API, Tailwind CSS</p>
-                    <a href="https://github.com/vaibhav-gosavi/resuMATCH.git" target="_blank" class="text-blue-600 mt-2 inline-block">GitHub</a>
+                    <a href="https://github.com/vaibhav-gosavi/resuMATCH.git" target="_blank" class="text-blue-600">GitHub</a>
                 </div>
                 <div class="bg-gray-100 p-6 rounded-lg">
-                    <h3 class="text-lg font-semibold">AgriProject: Agricultural Data Analysis</h3>
-                    <p class="mt-2 text-gray-700">Used FastAPI and LSTM models to forecast agricultural commodity prices.</p>
-                    <p class="mt-2 text-gray-600"><strong>Tech Stack:</strong> FastAPI, React.js, Docker, LSTM</p>
-                    <a href="https://github.com/vaibhav-gosavi/AgriProjectFrontend" target="_blank" class="text-blue-600">Frontend</a> |
-                    <a href="https://github.com/vaibhav-gosavi/AgriProjectBackend" target="_blank" class="text-blue-600">Backend</a>
+                    <h3 class="text-lg font-semibold">Real-Time Stock Market Analysis & Prediction</h3>
+                    <p class="mt-2 text-gray-700">Developed a real-time stock market analysis and forecasting system using sentiment analysis and predictive models.</p>
+                    <p class="mt-2 text-gray-600"><strong>Tech Stack:</strong> React.js, FastAPI, LSTM, ARIMA, Alpha Vantage API</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="max-w-6xl mx-auto px-6 my-12">
+        <div class="bg-white shadow-lg rounded-lg p-8">
+            <h2 class="text-3xl font-semibold mb-4">🎓 Education</h2>
+            <p class="text-gray-700"><strong>Mangalore Institute of Technology and Engineering</strong></p>
+            <p class="text-gray-500">Bachelor of Engineering in Computer Science | GPA: 8.08</p>
         </div>
     </section>
 
