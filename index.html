@@ -4,125 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaibhav Gosavi - Full Stack Developer</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: #f5f5f5;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Vaibhav Gosavi</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
+<body class="text-black">
+
+    <!-- Navbar -->
+    <header class="backdrop-blur-md bg-white/80 shadow-md fixed top-0 left-0 w-full z-50">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+            <div class="text-2xl font-bold tracking-wide">Vaibhav Gosavi</div>
+            <div class="flex gap-6">
+                <a href="#about" class="hover:text-gray-700 transition">About</a>
+                <a href="#experience" class="hover:text-gray-700 transition">Experience</a>
+                <a href="#projects" class="hover:text-gray-700 transition">Projects</a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <div class="hero">
-            <div class="hero-content">
-                <div class="profile-container">
-                    <div class="profile-shadow"></div>
-                    <div class="profile-image">
-                        <img src="https://via.placeholder.com/180" alt="Vaibhav Gosavi Profile Image">
-                    </div>
+    <!-- Hero Section -->
+    <main class="max-w-6xl mx-auto px-6 pt-32 pb-12">
+        <div class="flex flex-col md:flex-row items-center gap-10">
+            <div class="relative">
+                <div class="absolute top-2 left-2 w-48 h-48 bg-gray-300 rounded-xl -z-10"></div>
+                <img class="w-48 h-48 rounded-xl shadow-lg border border-gray-300" src="https://via.placeholder.com/180" alt="Vaibhav Gosavi">
+            </div>
+            <div class="text-center md:text-left">
+                <h1 class="text-5xl font-extrabold">Vaibhav Gosavi</h1>
+                <p class="text-xl text-gray-600 mt-2">| Full Stack Developer</p>
+                <p class="text-gray-500 mt-3">Based in Mangalore, India</p>
+                <div class="flex gap-4 mt-5 justify-center md:justify-start">
+                    <a href="https://www.linkedin.com/in/vaibhav--gosavi/" target="_blank" class="hover:scale-110 transition">
+                        <img class="w-8" src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/vaibhav-gosavi" target="_blank" class="hover:scale-110 transition">
+                        <img class="w-8" src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub">
+                    </a>
                 </div>
-                
-                <div class="hero-text">
-                    <h1>Vaibhav Gosavi</h1>
-                    <div class="title">
-                        <span class="separator">|</span>
-                        <span class="role">Full Stack Developer</span>
-                    </div>
-                    
-                    <p class="location">Based in Mangalore, India</p>
-                    
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/vaibhav--gosavi/" class="social-icon" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                        </a>
-                        <a href="https://github.com/vaibhav-gosavi" class="social-icon" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                        </a>
-                    </div>
-                    
-                    <div class="availability">Available for work</div>
-                </div>
+                <span class="mt-6 inline-block bg-black text-white px-6 py-2 rounded-full text-lg">Available for work</span>
             </div>
         </div>
-
-        <section id="about">
-            <h2 class="section-title">📄 About Me</h2>
-            <div class="about-content">
-                <p>Full Stack Developer with 5 months of experience building user-friendly applications using front-end and back-end technologies. Skilled in delivering efficient, end-to-end solutions and solving complex challenges. Interested in Generative AI and Machine Learning, with a passion for innovative web development projects.</p>
-                <div class="skills">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Tailwind</span>
-                    <span class="skill-tag">FastAPI</span>
-                    <span class="skill-tag">Express</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience">
-            <h2 class="section-title">💼 Work Experience</h2>
-            <div class="experience-items">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Full Stack Development Intern</h3>
-                        <span class="date">August 2024 - Present</span>
-                    </div>
-                    <h4>Hyggex World</h4>
-                    <p>● Developed an AI-powered timetable and calendar system to automate scheduling and enhance UX.</p>
-                    <p>● Designed and developed a user-friendly dashboard, improving user engagement.</p>
-                    <p>● Migrated authentication system from phone-based to email-based for enhanced security.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2 class="section-title">🔗 Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>ResuMATCH: AI-Based ATS-Friendly Resume Generator</h3>
-                    <p>An AI-powered system for generating ATS-friendly resumes with customizable formats. Integrated Razorpay for payments and user account creation.</p>
-                    <p><strong>Tech Stack:</strong> MERN, Razorpay API, Tailwind CSS, JWT Authentication.</p>
-                    <a href="https://github.com/vaibhav-gosavi/resuMATCH.git" target="_blank">GitHub</a>
-                </div>
-                <br />
-                <div class="project-card">
-                    <h3>AgriProject: Agricultural Data Analysis and Forecasting Platform</h3>
-                    <p>Used FastAPI and LSTM models to forecast monthly agricultural commodity prices. Integrated modular APIs with React for data visualization.</p>
-                    <p><strong>Tech Stack:</strong> FastAPI, React.js, Docker, LSTM.</p>
-                    <a href="https://github.com/vaibhav-gosavi/AgriProjectFrontend" target="_blank">Frontend</a> |
-                    <a href="https://github.com/vaibhav-gosavi/AgriProjectBackend" target="_blank">Backend</a>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <a href="mailto:vgosavi070@gmail.com">vgosavi070@gmail.com</a>
-                <a href="https://github.com/vaibhav-gosavi">GitHub</a>
-                <a href="https://www.linkedin.com/in/vaibhav--gosavi/">LinkedIn</a>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
+    <!-- About Section -->
+    <section id="about" class="max-w-6xl mx-auto px-6 my-12">
+        <div class="bg-white shadow-lg rounded-lg p-8">
+            <h2 class="text-3xl font-semibold mb-4">📄 About Me</h2>
+            <p class="text-gray-700 leading-relaxed">Full Stack Developer with 5 months of experience building user-friendly applications using front-end and back-end technologies. Passionate about Generative AI and Machine Learning, with a focus on innovative web projects.</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">Python</span>
+                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">JavaScript</span>
+                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">SQL</span>
+                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">React</span>
+                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">Tailwind</span>
+                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">FastAPI</span>
+                <span class="bg-black text-white px-4 py-2 rounded-md text-sm">Express</span>
             </div>
         </div>
-        <div class="footer-credit">
-            Made with ❤️ by Vaibhav Gosavi
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="max-w-6xl mx-auto px-6 my-12">
+        <div class="bg-white shadow-lg rounded-lg p-8">
+            <h2 class="text-3xl font-semibold mb-4">💼 Work Experience</h2>
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold">Full Stack Development Intern</h3>
+                <p class="text-gray-500">Hyggex World | August 2024 - Present</p>
+                <ul class="list-disc list-inside mt-3 text-gray-700">
+                    <li>Developed an AI-powered timetable system.</li>
+                    <li>Designed and developed a user-friendly dashboard.</li>
+                    <li>Migrated authentication system for better security.</li>
+                </ul>
+            </div>
         </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 my-12">
+        <div class="bg-white shadow-lg rounded-lg p-8">
+            <h2 class="text-3xl font-semibold mb-4">🔗 Projects</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold">ResuMATCH: ATS-Friendly Resume Generator</h3>
+                    <p class="mt-2 text-gray-700">An AI-powered system for generating ATS-friendly resumes with customizable formats.</p>
+                    <p class="mt-2 text-gray-600"><strong>Tech Stack:</strong> MERN, Razorpay API, Tailwind CSS</p>
+                    <a href="https://github.com/vaibhav-gosavi/resuMATCH.git" target="_blank" class="text-blue-600 mt-2 inline-block">GitHub</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold">AgriProject: Agricultural Data Analysis</h3>
+                    <p class="mt-2 text-gray-700">Used FastAPI and LSTM models to forecast agricultural commodity prices.</p>
+                    <p class="mt-2 text-gray-600"><strong>Tech Stack:</strong> FastAPI, React.js, Docker, LSTM</p>
+                    <a href="https://github.com/vaibhav-gosavi/AgriProjectFrontend" target="_blank" class="text-blue-600">Frontend</a> |
+                    <a href="https://github.com/vaibhav-gosavi/AgriProjectBackend" target="_blank" class="text-blue-600">Backend</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6 mt-12">
+        <p class="text-center">Made with ❤️ by Vaibhav Gosavi</p>
     </footer>
+
 </body>
 </html>
